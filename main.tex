@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% Author : Darshan Dedhia
+% Based off of: https://github.com/darshan-dedhia/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Darshan Dedhia} \\ \vspace{1pt}
+    \small (857) 250-9512 $|$ \href{mailto:dedhia.da@northeastern.edu}{\underline{dedhia.da@northeastern.edu}} $|$ 
+    \href{https://www.linkedin.com/in/dedhiadarshan/}{\underline{linkedin.com/in/dedhiadarshan/}} $|$
+    \href{https://github.com/darshan-dedhia}{\underline{github.com/darshan-dedhia}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Northeastern University}{Boston, MA}
+      {Master of Science in Information Systems}{December 2021}
+    \resumeSubheading
+      {University of Mumbai}{Mumbai, India}
+      {Bachelor of Engineering in Electronics Engineering}{June 2015}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Javascript, Go} \\
+     \textbf{Web Technologies}{: Node.js, HTML, CSS/SASS, Angular, AngularJS, RxJS, Socket.IO, Spring, Hibernate} \\
+     \textbf{Database}{: SQL, PL/SQL, Oracle Database, MongoDB, MySQL} \\
+     \textbf{Tools and Cloud Technologies}{: Git, Maven, Splunk, Amazon Web Services (AWS), CircleCI, Terraform} \\
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {SS\&C Eze Softwares}{Boston, MA}
+      {Software Developer Coop, Eclipse Cloud Trading R\&D}{June 2020 -- December 2020}
+      \resumeItemListStart
+        \resumeItem{Developed new features of Suspensions for Eclipse Cloud trading products using microservices architecture and technologies like AngularJS, Go, RabbitMQ, AWS, Splunk, etc.}
+        \resumeItem{Reduced memory footprint of AngularJS application from 450MB to 25MB by finding and resolving memory leaks}
+        \resumeItem{Improvised the test coverage of several microservices from around 70\% to over 85\%, resulting in more stable and error free code deliveries}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Tata Consultancy Services Ltd.}{Mumbai, India}
+      {Software Developer, TCS BaNCS, Securities Trading - Risk}{March 2016 -- August 2019}
+      \resumeItemListStart
+        \resumeItem{Mentored and led a team 4 juniors to develop features for fully automated securities trading platform using technologies like VB.net, PL/SQL and VB6}
+        \resumeItem{Implemented Smart Order Routing algorithm by evaluating best bargain discovery which resulted in increased gains by finding the most profitable trades with improved probability of executions}
+        \resumeItem{Improvised trade handling capacity of Risk Management System by analyzing workload reports, explain plans and optimizing queries. Benchmarked 1 million trades per day from earlier capacity of handling 300,000 trades per day}
+        \resumeItem{Devised system automation to identify and delete dormant customer data that brought down tuple count from 30 million to 3.6 million. This reduced Net Liquidation Value calculation time from 25 minutes to less than 7 minutes}
+        \resumeItem{Improvised Start of Day and End of Day cron jobs by distributing main process into various tiny batches. Built intelligence for organized process execution and to automatically detect and resolve erroneous data}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Expense Splitting Application} $|$ \emph{Angular, Spring, Hibernate, MySQL, HTML, CSS}}{Spring 2020}
+          \resumeItemListStart
+            \resumeItem{Designed expense splitting application for managing expenses,  shares and settlements, individually and in groups by writing frontend in Angular using Material UI and implementing RESTful service using Spring and Hibernate}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{AskHusky} $|$ \emph{Angular, Node.JS, MongoDB, HTML, CSS}}{Fall 2019}
+          \resumeItemListStart
+            \resumeItem{Collaborated in group of four to develop question answer portal for university students where students can ask doubts and get answers from peers. Implemented Login/Signup, adding question and maintaining votes features}
+          \resumeItemListEnd
+          
+        \resumeProjectHeading
+          {\textbf{Book store on AWS Cloud} $|$ \emph{Angular, Node.JS, Sequalize ORM, AWS Services, Terraform}}{Summer 2020}
+          \resumeItemListStart
+            \resumeItem{Designed fault tolerant web application hosted on AWS colud using IAAS services like EC2, EBS, ELB, Route53, IAM, RDS, and S3. Implemented IAAS using Terraform and CI/CD using Github, CircleCI and CodeDeploy}
+          \resumeItemListEnd  
+          
+    \resumeSubHeadingListEnd
+
+\section{Honors, Awards and Recognition}
+    \resumeItemListStart
+        \resumeItem{Received over \textbf{8 awards} and several appreciation from clients during the tenure at Tata Consultancy Service Ltd. for customer centricity, ownership and simplistic innovations}
+        \resumeItem{Selected as the \textbf{2nd winner amongst 250 participants} at Codepath Fall 2020 Demo Day for developing android app to help users develop, share, and track individual habits with their friends}
+        \resumeItem{Recognised for contributing in benchmarking performance of sorting algorithm with authors R. C. Hillyard, Yunlu Liaozheng, and Sai Vineeth K. R. 
+        \textit{HuskySort}. 
+        Northeastern university, Boston, MA, 2020
+        }
+    \resumeItemListEnd    
+
+
+%-------------------------------------------
+\end{document}
